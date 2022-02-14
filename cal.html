@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+</head>
+<body>
+    <center> 
+        <h1>Employee Monthly Salary Calculation</h1>
+    </center>
+
+    <form action=""  onsubmit="calulate()";>
+        <div> Employee ID:
+       <input type="text" name="" id=""  placeholder="Enter Employee ID">
+
+        </div>
+        <br>
+
+        <div> Employee Name:
+            <input type="text" name="" id="" placeholder="Enter Employee Name">
+
+        </div>
+        <br>
+        <div> E-mail Address:
+            <input type="email" name="" id="" placeholder="Enter E-mail Address">
+            
+        </div>
+        <br>
+        <div> Designation:
+
+            <select name="" id="">
+                <option value="">Senior Manager</option>
+                <option value="">Team Lead</option>
+                <option value="">Project Manager</option>
+                <option value="">IT Administrator</option>
+                <option value="">Junior Software Developer</option>
+                <option value="">Human Resource Manager</option>
+            </select> 
+            
+        </div>
+        <br>
+
+        <div> Basic Salary:
+            $<input type="number" name="" id="sal" placeholder="0.0">
+
+        </div>
+        <div id="parr" ></div>
+         <br>
+
+         <input type="submit" value="Calculate"; >
+
+         <button type="reset">Clear</button>
+          <!-- <p id="demo"></p> -->
+          
+          
+    </form>
+
+    <script> 
+    // document.addEventListener ("mouseover", function(){
+    //     document.getElementById("demo").innerHTML = "Hello World";
+    // });
+   function calulate() {
+     var amount = document.getElementById('sal').value;
+    amount = amount - (amount /10);
+    
+
+    document.querySelector('#parr'). innerHTML = `Your net salary is ${amount}`;
+   
+} 
+       
+
+        
+
+    //   var par = document.getElementsByTagName('p');
+    //   par.innerHTML = ("Your net salary is: " + (amount)) 
+
+
+    // if(amount >= 95650){
+    //    document.write(`Your net salary is ${amount}`)
+    // }
+    // else if( amount >= 35350){
+    //     document.write(`Your net salary is ${amount}`)
+    // }
+    // else if(amount >= 8700){
+    //     document.write(`Your net salary is ${amount}`)
+    // }
+    // else{
+    //     document.write(`Your net salary is ${amount}`)
+    //     }
+   
+
+
+       
+      
+
+    
+    
+    </script>
+</body>
+</html>
